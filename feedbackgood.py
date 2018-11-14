@@ -24,8 +24,14 @@ while search_form_password == None or search_form_username == None:
 
 
 
-search_form_username.send_keys(open(r"username",'r').read())
-search_form_password.send_keys(open(r"pass",'r').read())
+# search_form_username.send_keys(open(r"username",'r').read())
+# search_form_password.send_keys(open(r"pass",'r').read())
+username = str(sys.argv[1])
+password = str(sys.argv[2])
+
+search_form_username.send_keys(username)
+search_form_password.send_keys(password)
+
 
 search_form_submit = webbrowser.find_element_by_name('Submit')
 search_form_submit.click()
@@ -34,7 +40,7 @@ search_form_submit.click()
 webbrowser.get(r'http://115.114.127.54:8080/psp/bitcsprd/EMPLOYEE/HRMS/c/B_STDNT_SLF.B_OFFRD_CRSE_CMP.GBL?PORTALPARAM_PTCNAV=B_STUDENT_FEED_BACK&EOPP.SCNode=HRMS&EOPP.SCPortal=EMPLOYEE&EOPP.SCName=B_FACULTY_FEEDBACK&EOPP.SCLabel=Feedback&EOPP.SCPTfname=B_FACULTY_FEEDBACK&FolderPath=PORTAL_ROOT_OBJECT.B_FACULTY_FEEDBACK.B_STUDENT_FEED_BACK&IsFolder=false')
 
 
-nsubjects = int(sys.argv[1])
+nsubjects = int(sys.argv[3])
 
 webbrowser.switch_to.frame(webbrowser.find_element_by_id('ptifrmtgtframe'))#Fucker Dimaag ka dahi kr diya tha iframe ne
 

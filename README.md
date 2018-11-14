@@ -2,14 +2,18 @@
 ### PeopleSoft Oracle
 
 Pre-Requisites:
-- geckodriver
+- geckodriver (Google)
+- Updated Firefox
 - selenium
 - Awesome Internet Connection
-- Make 2 files: 'username' and 'pass' in the same directory
-- You know what to put in it.
 
-Command Line: (if number of subjects registered = 7)
+Command Line: (if username = B30779 , password = 1234 and number of subjects registered = 7)
 ```
-$ python feedback.py 7
+$ python feedbackgood.py B30779 1234 7
 ```
-Thats it. Have a cup of coffee now.
+or
+```
+$ python feedbackbad.py B30779 1234 7
+```
+
+Thats it. Go have a cup of coffee.

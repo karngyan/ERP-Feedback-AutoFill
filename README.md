@@ -2,7 +2,7 @@
 ### PeopleSoft Oracle
 
 Pre-Requisites:
-- geckodriver (Google)
+- geckodriver (Google it)
 - Updated Firefox
 - selenium
 - Awesome Internet Connection
